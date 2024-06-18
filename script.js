@@ -1,8 +1,7 @@
-const pi=3.141
 function volume_sphere(r) {
     if(r>=0 && !isNaN(r))
     {
-        var volume=(4/3)*pi*r*r*r;
+        var volume=(4/3)*Math.PI*r*r*r;
         return volume.toFixed(4);
     }
     else
@@ -18,4 +17,3 @@ window.onload = function() {
         document.getElementById('volume').value = volume_sphere(r);
     };
 };
-
